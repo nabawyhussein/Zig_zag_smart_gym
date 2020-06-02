@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/z"
+    tools:context="com.example.zig_zag.editadmin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Edit Admin"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editadmin_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:height="35sp" />
+
+    <EditText
+
+        android:textColorHint="@android:color/black"
+        android:id="@+id/editadmin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+
+        android:textColorHint="@android:color/black"
+        android:id="@+id/editadmin_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/saveedits"
+        android:textColor="@android:color/white"
+        android:elevation="20sp"
+        android:layout_marginHorizontal="60sp"
+        android:background="@drawable/radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save edits" />
+
+    <Button
+        android:id="@+id/deleteadmin"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:elevation="20sp"
+        android:layout_marginHorizontal="60sp"
+        android:background="@drawable/radius"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:text="Remove" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

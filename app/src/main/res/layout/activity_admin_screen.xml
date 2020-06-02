@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/n"
+    android:orientation="vertical"
+    tools:context=".admin_screen">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+           >
+            <Button
+                android:id="@+id/adminscreen_adduser"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:onClick="adduser"
+                android:text="add new user"
+                android:textSize="22sp" />
+
+
+
+            <Button
+                android:id="@+id/adminscreen_checkremain"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:onClick="checckremaintime"
+                android:text="check range"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/adminscreen_addadmin"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:onClick="addadmin"
+                android:text="new admin"
+                android:textSize="22sp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/listadmins"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:onClick="viewalladmins"
+                android:text="all admins"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/list_users"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:onClick="viewallusers"
+                android:text="all users"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

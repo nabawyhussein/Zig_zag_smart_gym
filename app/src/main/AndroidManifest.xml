@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zig_zag">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".check_user_in_range"></activity>
+        <activity android:name=".check_remain_results" />
+        <activity android:name="com.example.rea.check_remain_results" />
+        <activity android:name=".admin_edit_user" />
+        <activity android:name=".all_users" />
+        <activity android:name=".editadmin" />
+        <activity android:name=".alladmins" />
+        <activity android:name=".edit_user_screen" />
+        <activity android:name=".check_remain" />
+        <activity android:name=".delete_admin" />
+        <activity android:name=".new_admin" />
+        <activity android:name=".edit_user" />
+        <activity android:name=".new_user" />
+        <activity android:name=".admin_screen" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
